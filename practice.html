@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing Plans</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #eef2f7, #dbe6f6);
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .card p.subtitle {
+      margin: 5px 0 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .price {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .price span {
+      font-size: 16px;
+      color: #555;
+    }
+
+    ul.features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    ul.features li {
+      margin: 8px 0;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .personal .price { color: #2d9cdb; }
+    .personal .read-more { background: #2d9cdb; }
+
+    .business .price { color: #f57c00; }
+    .business .read-more { background: #f57c00; }
+
+    .enterprise .price { color: #8e24aa; }
+    .enterprise .read-more { background: #8e24aa; }
+
+    .card img {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-container">
+    <div class="card personal">
+      <h2>Personal</h2>
+      <p class="subtitle">We Think Ahead</p>
+      <div class="price">$29 <span>/month</span></div>
+      <ul class="features">
+        <li>Mobile-Optimized</li>
+        <li>Free Custom Domain</li>
+        <li>Best Web Hosting</li>
+        <li>Outstanding Support Team</li>
+        <li>Our Happy Customers</li>
+      </ul>
+      <a href="#" class="read-more">READ MORE</a>
+      <img src="https://via.placeholder.com/250x120?text=Personal+Image" alt="Personal Plan Image">
+    </div>
+
+    <div class="card business">
+      <h2>Business</h2>
+      <p class="subtitle">Special Offer</p>
+      <div class="price">$38 <span>/month</span></div>
+      <ul class="features">
+        <li>Mobile-Optimized</li>
+        <li>Free Custom Domain</li>
+        <li>Best Web Hosting</li>
+        <li>Outstanding Support Team</li>
+        <li>Our Happy Customers</li>
+      </ul>
+      <a href="#" class="read-more">READ MORE</a>
+      <img src="https://via.placeholder.com/250x120?text=Business+Image" alt="Business Plan Image">
+    </div>
+
+    <div class="card enterprise">
+      <h2>Enterprise</h2>
+      <p class="subtitle">Our Best Solution</p>
+      <div class="price">$75 <span>/month</span></div>
+      <ul class="features">
+        <li>Mobile-Optimized</li>
+        <li>Free Custom Domain</li>
+        <li>Best Web Hosting</li>
+        <li>Outstanding Support Team</li>
+        <li>Our Happy Customers</li>
+      </ul>
+      <a href="#" class="read-more">READ MORE</a>
+      <img src="https://via.placeholder.com/250x120?text=Enterprise+Image" alt="Enterprise Plan Image">
+    </div>
+  </div>
+</body>
+</html>
