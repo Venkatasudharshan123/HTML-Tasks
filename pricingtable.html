@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #444;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pricing-table {
+      display: flex;
+      gap: 20px;
+    }
+
+    .plan {
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .plan-header {
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .starter { background: #3ab0d4; }
+    .econo { background: #8cc3d9; }
+    .standard { background: #2a6eb2; }
+    .professional { background: #0070c0; }
+
+    .ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: gold;
+      color: #333;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      transform: rotate(45deg);
+      transform-origin: top right;
+    }
+
+    .price {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .per-month {
+      font-size: 14px;
+    }
+
+    .plan-details {
+      padding: 20px 10px;
+      background: white;
+    }
+
+    .plan-details table {
+      width: 100%;
+      border-collapse:collapse;
+      font-size: 14px;
+    }
+
+    .plan-details td {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .signup {
+      background: #eee;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .signup button {
+      background: #0070c0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .signup button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-table">
+    <div class="plan starter">
+      <div class="plan-header">
+        <h3>starter</h3>
+        <div class="price">$10</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="plan-details">
+        <table>
+          <tr><td>Amount of space</td><td>10GB</td></tr>
+          <tr><td>Bandwidth per month</td><td>100GB</td></tr>
+          <tr><td>No. of e-mail accounts</td><td>1</td></tr>
+          <tr><td>No. of MySql databases</td><td>1</td></tr>
+          <tr><td>24h support</td><td>Yes</td></tr>
+          <tr><td>Support tickets per mo.</td><td>1</td></tr>
+        </table>
+      </div>
+      <div class="signup"><button>sign up!</button></div>
+    </div>
+
+    <div class="plan econo">
+      <div class="plan-header">
+        <h3>econo</h3>
+        <div class="price">$30</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="plan-details">
+        <table>
+          <tr><td>Amount of space</td><td>100GB</td></tr>
+          <tr><td>Bandwidth per month</td><td>200GB</td></tr>
+          <tr><td>No. of e-mail accounts</td><td>10</td></tr>
+          <tr><td>No. of MySql databases</td><td>10</td></tr>
+          <tr><td>24h support</td><td>Yes</td></tr>
+          <tr><td>Support tickets per mo.</td><td>5</td></tr>
+        </table>
+      </div>
+      <div class="signup"><button>sign up!</button></div>
+    </div>
+
+    <div class="plan standard">
+      <div class="ribbon">best value</div>
+      <div class="plan-header">
+        <h3>standard</h3>
+        <div class="price">$59</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="plan-details">
+        <table>
+          <tr><td>Amount of space</td><td>1000GB</td></tr>
+          <tr><td>Bandwidth per month</td><td>500GB</td></tr>
+          <tr><td>No. of e-mail accounts</td><td>50</td></tr>
+          <tr><td>No. of MySql databases</td><td>50</td></tr>
+          <tr><td>24h support</td><td>Yes</td></tr>
+          <tr><td>Support tickets per mo.</td><td>10</td></tr>
+        </table>
+      </div>
+      <div class="signup"><button>sign up!</button></div>
+    </div>
+
+    <div class="plan professional">
+      <div class="ribbon">best value</div>
+      <div class="plan-header">
+        <h3>professional</h3>
+        <div class="price">$99</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="plan-details">
+        <table>
+          <tr><td>Amount of space</td><td>Unlimited</td></tr>
+          <tr><td>Bandwidth per month</td><td>1000GB</td></tr>
+          <tr><td>No. of e-mail accounts</td><td>Unlimited</td></tr>
+          <tr><td>No. of MySql databases</td><td>Unlimited</td></tr>
+          <tr><td>24h support</td><td>Yes</td></tr>
+          <tr><td>Support tickets per mo.</td><td>10</td></tr>
+        </table>
+      </div>
+      <div class="signup"><button>sign up!</button></div>
+    </div>
+  </div>
+</body>
+</html>
